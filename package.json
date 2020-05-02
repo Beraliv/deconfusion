@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Beraliv/deconfusion/issues"
   },
-  "homepage": "https://github.com/Beraliv/deconfusion#readme"
+  "homepage": "https://github.com/Beraliv/deconfusion#readme",
+  "devDependencies": {
+    "@types/node": "^13.13.4"
+  }
 }
