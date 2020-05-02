@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Beraliv/deconfusion#readme",
   "devDependencies": {
     "@types/node": "^13.13.4"
+  },
+  "dependencies": {
+    "concat-stream": "^2.0.0"
   }
 }
