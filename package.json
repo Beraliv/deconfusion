@@ -1,0 +1,23 @@
+{
+  "name": "deconfusion",
+  "version": "1.0.0",
+  "description": "Simple deobfuscator for JavaScript source code (opposite effect of obfuscator)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beraliv/deconfusion.git"
+  },
+  "keywords": [
+    "js",
+    "deobfuscator"
+  ],
+  "author": "Alexey I. Berezin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Beraliv/deconfusion/issues"
+  },
+  "homepage": "https://github.com/Beraliv/deconfusion#readme"
+}
