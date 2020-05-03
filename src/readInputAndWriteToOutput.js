@@ -1,17 +1,14 @@
 #! /usr/bin/env node
 const concat = require("concat-stream");
 const fs = require("fs");
+const { readInputAndReturnOutput } = require("./readInputAndReturnOutput");
 
 const { stdin: input, stdout: output } = process;
 
 const readInputAndWriteToOutput = (getOutputSource) => {
-  input.pipe(
-    concat({ encoding: "string" }, (source) => {
-      const outputSource = getOutputSource(source);
-
-      output.write(outputSource);
-    })
-  );
+  readInputAndReturnOutput(getOutputSource, (outputSource) => {
+    output.write(outputSource);
+  });
 };
 
 module.exports = {
