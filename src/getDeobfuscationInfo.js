@@ -8,17 +8,16 @@ const [, , search] = process.argv;
 
 const findItems = (source) => {
   const variable = getVariable(source);
-  const items = getMethodArray(source);
+  const deobfuscatedItems = getMethodArray(source);
 
   const foundItems = [];
-  for (let index = 0; index < items.length; index++) {
-    const item = items[index];
+  for (let index = 0; index < deobfuscatedItems.length; index++) {
+    const deobfuscatedItem = deobfuscatedItems[index];
 
-    if (item.startsWith(search)) {
+    if (deobfuscatedItem.startsWith(search)) {
       foundItems.push({
-        obfuscatedValue: `${variable}[${index}]`,
-        index,
-        item,
+        obfuscated: `${variable}[${index}]`,
+        deobfuscated: deobfuscatedItem,
       });
     }
   }

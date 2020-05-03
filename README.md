@@ -19,16 +19,8 @@ node src/getDeobfuscationInfo.js < examples/joyn/player-toolkit-template/input.j
 
 # output below
 Found items:  [
-  { obfuscatedValue: '_x8302[1312]', index: 1312, item: 'entries' },
-  {
-    obfuscatedValue: '_x8302[1489]',
-    index: 1489,
-    item: 'entitlementToken'
-  },
-  {
-    obfuscatedValue: '_x8302[1491]',
-    index: 1491,
-    item: 'entitlement_id'
-  }
+  { obfuscated: '_x8302[1312]', deobfuscated: 'entries' },
+  { obfuscated: '_x8302[1489]', deobfuscated: 'entitlementToken' },
+  { obfuscated: '_x8302[1491]', deobfuscated: 'entitlement_id' }
 ]
 ```
