@@ -26,4 +26,4 @@ const prettifySource = (source) => {
   return deobfuscatedModule;
 };
 
-readInputAndWriteToOutput((source) => prettifySource(source));
+readInputAndWriteToOutput(prettifySource);
