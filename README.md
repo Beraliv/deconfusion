@@ -17,10 +17,19 @@ Read the input file and show the info about the method
 ```bash
 node src/getDeobfuscationInfo.js < examples/joyn/player-toolkit-template/input.js ent
 
-# output below
+# output
 Found items:  [
   { obfuscated: '_x8302[1312]', deobfuscated: 'entries' },
   { obfuscated: '_x8302[1489]', deobfuscated: 'entitlementToken' },
   { obfuscated: '_x8302[1491]', deobfuscated: 'entitlement_id' }
 ]
+```
+
+Also there is a search by index
+
+```bash
+node src/getDeobfuscationInfo.js < examples/joyn/player-toolkit-template/input.js 46 --by-index
+
+# output
+Item by index=[46]: { obfuscated: '_x8302[46]', deobfuscated: 'logging' }
 ```
