@@ -1,10 +1,7 @@
 #! /usr/bin/env node
-const concat = require("concat-stream");
-const fs = require("fs");
 const { getMethodArray, getModuleEndIndex } = require("./getMethodArray");
 const { getVariable } = require("./getVariable");
-
-const { stdin: input, stdout: output } = process;
+const { readInputAndWriteToOutput } = require("./readInputAndWriteToOutput");
 
 const prettifySource = (source) => {
   const variable = getVariable(source);
@@ -29,8 +26,4 @@ const prettifySource = (source) => {
   return deobfuscatedModule;
 };
 
-input.pipe(
-  concat({ encoding: "string" }, (source) => {
-    output.write(prettifySource(source));
-  })
-);
+readInputAndWriteToOutput((source) => prettifySource(source));
