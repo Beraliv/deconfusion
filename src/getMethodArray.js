@@ -17,7 +17,7 @@ const getMethodArrayStartIndex = (source) => {
   return arrayStartIndex;
 };
 
-const getMethodArray = (source) => {
+const getMethodArrayWithQuotas = (source) => {
   const arrayStartIndex = getMethodArrayStartIndex(source);
   const arrayEndIndex = source.lastIndexOf("]");
 
@@ -42,8 +42,17 @@ const getMethodArray = (source) => {
   return array;
 };
 
+const getMethodArray = (source) => {
+  const arrayWithQuolas = getMethodArrayWithQuotas(source);
+
+  const arrayWithoutQuolas = arrayWithQuolas.map((value) => value.slice(1, -1));
+
+  return arrayWithoutQuolas;
+};
+
 module.exports = {
   getMethodArray,
+  getMethodArrayWithQuotas,
   getMethodArrayStartIndex,
   getModuleEndIndex,
 };

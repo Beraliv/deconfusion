@@ -1,11 +1,14 @@
 #! /usr/bin/env node
-const { getMethodArray, getModuleEndIndex } = require("./getMethodArray");
+const {
+  getMethodArrayWithQuotas,
+  getModuleEndIndex,
+} = require("./getMethodArray");
 const { getVariable } = require("./getVariable");
 const { readInputAndWriteToOutput } = require("./readInputAndWriteToOutput");
 
 const prettifySource = (source) => {
   const variable = getVariable(source);
-  const array = getMethodArray(source);
+  const array = getMethodArrayWithQuotas(source);
 
   const FILE_START_CHUNK = `(function (${variable}) {`;
 
