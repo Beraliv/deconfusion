@@ -2,6 +2,15 @@
 
 Simple deobfuscator for JavaScript source code (opposite effect of obfuscator)
 
+## Obfuscation
+
+The library is based on the source code of [confusion](https://github.com/uxebu/confusion), it tries to revert an effect of it.
+
+So it really helps for:
+
+1. **Code readability** (better understanding)
+2. **Easy debugging** (you can use Charles, replace scripts and get better stack trace of loading and errors)
+
 ## Deobfuscate
 
 Read the input file and write the result to the output file
