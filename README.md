@@ -2,6 +2,8 @@
 
 Simple deobfuscator for JavaScript source code (opposite effect of obfuscator)
 
+For more details have a look at [Medium article about Joyn scripts obfuscation](https://medium.com/@beraliv/research-joyn-scripts-obfuscation-d33b0e64f86d).
+
 ## Obfuscation
 
 The library is based on the source code of [confusion](https://github.com/uxebu/confusion), it tries to revert an effect of it.
