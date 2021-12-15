@@ -2,7 +2,7 @@
 
 Simple deobfuscator for JavaScript source code (opposite effect of obfuscator)
 
-For more details have a look at [Medium article about Joyn scripts obfuscation](https://medium.com/@beraliv/research-joyn-scripts-obfuscation-d33b0e64f86d).
+For more details have a look at [Blog post article about Joyn scripts obfuscation](https://blog.beraliv.dev/2020-05-04-research-joyn-scripts-obfuscation).
 
 ## Obfuscation
 
